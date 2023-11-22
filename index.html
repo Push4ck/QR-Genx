@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/gen.css">
+    <link rel="stylesheet" href="assets/css/scan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/images/favico.png" sizes="32x32" type="images/x-icon">
+    <title>QR-Genx</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <button class="nav-gen active">Generator</button>
+            <button class="nav-scan">Scanner</button>
+        </nav>
+
+        <div class="generator">
+            <h1>QR Code Generator</h1>
+            <p>Paste a url or enter text to create QR Code.</p>
+
+            <div class="generator-form">
+                <input type="text" placeholder="Enter text or url">
+                <button>Generate QR Code</button>
+            </div>
+
+            <div class="generator-img">
+                <img src="" />
+            </div>
+
+            <div class="generator-btn">
+                <button class="btn-link">Download <i class="fa-solid fa-download"></i></button>
+            </div>
+        </div>
+
+        <div class="scanner" style="display: none;">
+            <h1>
+                QR Code Scanner or Reader 
+                <i class="fa-solid fa-camera"></i>
+                <i class="fa-solid fa-circle-stop"></i>
+            </h1>
+
+            <form class="scanner-form">
+                <input type="file" accept="image/*" hidden>
+
+                <img src=""/>
+                <video></video>
+
+                <div class="content">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <p>Upload QR Code to Scan</p>
+                </div>
+            </form>
+
+            <div class="scanner-details">
+                <textarea disabled></textarea>
+
+                <div class="btn">
+                    <button class="close">Close</button>
+                    <button class="copy">Copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer>
+        <p>&copy; <a href="https://push4ck.github.io/">Push4ck</a></p>
+    </footer> -->
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/gen.js"></script>
+    <script src="assets/js/scan.js"></script>
+    <script src="assets/js/instascan.min.js"></script>
+    
+</body>
+</html>
