@@ -18,7 +18,7 @@ QR-GenX harnesses the power of the [goqr.me API](https://goqr.me/api/) for QR co
 
 ## Usage
 
-1. Access the [QR-GenX website](https://qr-genx.vercel.app/) (replace with the actual link).
+1. Access the [QR-GenX website](https://qr-genx.vercel.app/).
 2. **Generate QR Code:**
     - Enter the desired text or URL in the input field.
     - Click the "Generate" button to trigger the goqr.me API and create the QR code.
